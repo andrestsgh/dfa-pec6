@@ -1,1 +1,23 @@
-<p>statistics-page works!</p>
+@defer() {
+    <div class="mt-5 chart-container chart-resume-data">
+        <app-resume-data></app-resume-data>
+    </div>
+} @placeholder {
+    <p class="block mt-5 chart-container chart-resume-data">Loading ...</p>
+}
+
+@defer(on viewport) {
+    <div class="mt-5 chart-container chart-gender">
+        <app-gender></app-gender>
+    </div>
+} @placeholder {
+    <p class="block mt-5 chart-container chart-gender">Loading ...</p>
+}
+
+@defer(on viewport) {
+    <div class="mt-5 chart-container chart-general-results">
+        <app-general-results></app-general-results>
+    </div>
+} @placeholder {
+    <p class="block mt-5 chart-container chart-general-results">Loading ...</p>
+}

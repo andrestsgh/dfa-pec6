@@ -1,0 +1,13 @@
+.chart-container {
+    height: 500px;
+}
+
+.chart-resume-data {
+    background-color: beige;
+}
+.chart-gender {
+    background-color: lightpink;
+}
+.chart-general-results {
+    background-color: lightblue;
+}

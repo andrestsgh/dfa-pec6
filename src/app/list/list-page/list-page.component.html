@@ -1,1 +1,32 @@
-<p>list-page works!</p>
+<cdk-virtual-scroll-viewport cla itemSize="100" class="vs-viewport">
+  <table class="student-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Apellidos</th>
+        <th>Sexo</th>
+        <th>Nota Final</th>
+        <th>Faltas de Asistencia</th>
+      </tr>
+    </thead>
+    <tbody>
+      @if (getStudents().length > 0){
+        <tr *cdkVirtualFor="let student of getStudents()">
+          <td>{{ student.id }}</td>
+          <td>{{ student.nombre }}</td>
+          <td>{{ student.apellidos }}</td>
+          <td>{{ student.sexo }}</td>
+          <td>{{ student.nota_final }}</td>
+          <td>{{ student.faltas_asistencia }}</td>
+        </tr>
+      } @else {
+        <tr>
+          <td colspan="6">No students available!</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</cdk-virtual-scroll-viewport>
+
+  

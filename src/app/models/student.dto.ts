@@ -1,9 +1,9 @@
 export interface StudentDTO {
-    ID_Alumno: number;
-    Nombre: string;
-    Apellidos: string;
-    Sexo: string;
-    Nota_Final: number;
-    Faltas_Asistencia: number;
+    id: number;
+    nombre: string;
+    apellidos: string;
+    sexo: string;
+    nota_final: number;
+    faltas_asistencia: number;
   }
   
